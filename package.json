@@ -2,24 +2,37 @@
 	"name": "octave-hacking",
 	"displayName": "Octave Hacking",
 	"description": "Support for GNU Octave programming",
-	"version": "0.0.1",
+	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/apjanke/vscode-octave-hacking"
+	},
 	"engines": {
 		"vscode": "^1.41.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onLanguage:octave"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
+		"commands": [{
 				"command": "extension.helloWorld",
 				"title": "Hello World"
-			}
-		]
+			}],
+		"languages": [{
+			"id": "octave",
+			"aliases": ["Octave", "octave"],
+			"extensions": [".m"],
+			"configuration": "./language-configuration.json"
+		}],
+		"grammars": [{
+			"language": "octave",
+			"scopeName": "source.octave",
+			"path": "./syntaxes/Octave.tmLanguage"
+		}]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",

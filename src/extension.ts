@@ -1,27 +1,39 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "octave-hacking" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('extension.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello VS Code!');
-	});
-
-	context.subscriptions.push(disposable);
+	console.log('Octave Hacking extension activating');
+	context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider(
+		{language: "octave"}, new OctaveDocumentSymbolProvider()
+	));
+	console.log('Octave Hacking extension activated');
 }
 
-// this method is called when your extension is deactivated
+class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
+
+	public provideDocumentSymbols(document: vscode.TextDocument,
+					token: vscode.CancellationToken): Thenable<vscode.DocumentSymbol[]> {
+		return new Promise((resolve, reject) => {
+			var symbols = [];
+
+			for (var i = 0; i < document.lineCount; i++) {
+				var line = document.lineAt(i);
+				var pat = new RegExp('^\\s*function\\s+((?:[\\[\\]\\s\\w_,~]*?\\s*=)?\\s*(\\w+).*)');
+				if (pat.test(line.text)) {
+					var match = line.text.match(pat);
+					let details = match![1];
+					let name = match![2];
+					//console.log('function MATCH: ' + name + " (" + match?.length + " long), 2=" + match![1]);
+					let docSym = new vscode.DocumentSymbol(
+						name, details, vscode.SymbolKind.Function, line.range, line.range
+					);
+					symbols.push(docSym);
+				}
+			}
+
+			resolve(symbols);
+		});
+	}
+
+}
+
 export function deactivate() {}
