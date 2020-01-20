@@ -22,7 +22,6 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 					var match = line.text.match(pat);
 					let details = match![1];
 					let name = match![2];
-					//console.log('function MATCH: ' + name + " (" + match?.length + " long), 2=" + match![1]);
 					let docSym = new vscode.DocumentSymbol(
 						name, details, vscode.SymbolKind.Function, line.range, line.range
 					);
