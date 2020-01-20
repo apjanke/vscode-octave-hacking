@@ -8,6 +8,9 @@
 		"type": "git",
 		"url": "https://github.com/apjanke/vscode-octave-hacking"
 	},
+	"bugs": {
+		"url": "https://github.com/apjanke/vscode-octave-hacking/issues"
+	},
 	"engines": {
 		"vscode": "^1.41.0"
 	},
