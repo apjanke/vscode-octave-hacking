@@ -2,6 +2,7 @@
 	"name": "octave-hacking",
 	"displayName": "Octave Hacking",
 	"description": "Support for GNU Octave programming",
+	"publisher": "apjanke",
 	"version": "0.1.0",
 	"repository": {
 		"type": "git",
