@@ -9,28 +9,25 @@
 * Intellisense
 * Linting
   * This will require writing a whole Octave linter, since none exists
-* Code folding
 * Go to definition
-* Comment/uncomment (cmd-K cmd-C)
-* Matching-paren bouncing with Ctrl-Shift-5 (like % in vim)
-* Snippets in my preferred form
 * Refactoring
   * Rename, with correct scope identification
 * Function signature help
 * Debugging/run Octave in a console window
   * Hover over variable in editor to see its value
-* Maybe a theme with the Octave logo colors
 * Profiler results in a web view?
-* Embedded Texinfo support
+* Embedded Texinfo language support
 * Auto-indentation
 
-## Concrete steps
+## TODO: Concrete steps
 
-* Grab the existing TextMate grammar definition for Octave and pull it in.
-* Find my old snippets and incorporate those
-  * Learn how to use snippets again
-* Register as a VS Code Extension publisher
-  * Decide whether to use "apjanke" or "janklab"
+* Get classdef/methods/properties highlighted as keywords
+
+## Goals: Done
+
+* Code folding
+* Matching-paren bouncing with Ctrl-Shift-5 (like % in vim)
+* Snippets in my preferred form
 
 ## Inspirations
 
