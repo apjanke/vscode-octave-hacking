@@ -9,8 +9,12 @@
     "brackets": [
         ["{", "}"],
         ["[", "]"],
-        ["(", ")"]
-        // TODO: Add function/endfunction, if/endif, properties/endproperties, etc?
+        ["(", ")"],
+        ["if", "endif"],
+        ["for", "endfor"],
+        ["while", "endwhile"],
+        ["try", "end_try_catch"],
+        ["unwind_protect", "end_unwind_protect"]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
