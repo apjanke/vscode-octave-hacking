@@ -15,6 +15,7 @@
 		"Programming Languages",
 		"Snippets"
 	],
+	"icon": "images/octave-hacking-logo.png",
 	"activationEvents": [
 		"onLanguage:octave"
 	],

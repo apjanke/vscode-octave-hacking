@@ -18,3 +18,5 @@ Nothing yet.
 Octave Hacking is written by [Andrew Janke](https://apjanke.net).
 
 The project home page is https://github.com/apjanke/vscode-octave-hacking.
+
+Octave Hacking logo produced by [funny.pho.to's Matrix Image Generator](http://funny.pho.to/matrix-image-generator).
