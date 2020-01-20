@@ -18,6 +18,12 @@ For that, I recommend you install the [Octave Debugger](https://marketplace.visu
 
 ![Screenshot of Octave Hacking VS Code extension](images/screenshot.png)
 
+## Background
+
+[GNU Octave](https://www.gnu.org/software/octave/) is a scientific programming language for numerical analysis that is largely compatible with [MATLAB](https://www.mathworks.com/products/matlab.html). It is free software, cross-platform, and has pervasive support for arrays.
+
+The Octave Hacking extension may be particularly useful to Mac users, because the Octave GUI for newer versions of Octave (5.x and 6.x) does not work correctly on macOS. VS Code with this extension and a debugging extension could be a good substitute.
+
 ## Extension Settings
 
 Nothing yet.
@@ -28,4 +34,4 @@ Octave Hacking is written by [Andrew Janke](https://apjanke.net).
 
 The project home page is <https://github.com/apjanke/vscode-octave-hacking>.
 
-Octave Hacking logo produced by [funny.pho.to's Matrix Image Generator](http://funny.pho.to/matrix-image-generator).
+Octave Hacking logo produced by [funny.pho.to's Matrix Image Generator](http://funny.pho.to/matrix-image-generator), based on the original [Octave logo](https://www.gnu.org/software/octave/img/octave-logo.svg) by the Octave Developers.
