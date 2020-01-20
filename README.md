@@ -1,6 +1,6 @@
-# octave-hacking README
+# Octave Hacking
 
-Octave Hacking is an attempt to turn VS Code into a decent IDE for GNU Octave.
+Octave Hacking is an attempt to turn VS Code into a decent IDE for [GNU Octave](https://www.gnu.org/software/octave/).
 
 ## Features
 
