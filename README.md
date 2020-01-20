@@ -6,6 +6,8 @@ Octave Hacking is an attempt to turn VS Code into a decent IDE for GNU Octave.
 
 * Syntax highlighting
 * Outline view and code navigation for functions
+* Snippets
+  * functions, classdefs, and common control structures
 
 ## Extension Settings
 
