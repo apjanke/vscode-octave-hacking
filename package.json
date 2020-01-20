@@ -3,7 +3,7 @@
 	"displayName": "Octave Hacking",
 	"description": "Support for GNU Octave programming",
 	"publisher": "apjanke",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/apjanke/vscode-octave-hacking"
@@ -12,32 +12,46 @@
 		"vscode": "^1.41.0"
 	},
 	"categories": [
-		"Programming Languages", "Snippets"
+		"Programming Languages",
+		"Snippets"
 	],
 	"activationEvents": [
 		"onLanguage:octave"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
+		"commands": [
+			{
 				"command": "extension.helloWorld",
 				"title": "Hello World"
-			}],
-		"languages": [{
-			"id": "octave",
-			"aliases": ["Octave", "octave"],
-			"extensions": [".m"],
-			"configuration": "./language-configuration.json"
-		}],
-		"grammars": [{
-			"language": "octave",
-			"scopeName": "source.octave",
-			"path": "./syntaxes/Octave.tmLanguage"
-		}],
-		"snippets": [{
-			"language": "octave",
-			"path": "./snippets.json"
-		}]
+			}
+		],
+		"languages": [
+			{
+				"id": "octave",
+				"aliases": [
+					"Octave",
+					"octave"
+				],
+				"extensions": [
+					".m"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "octave",
+				"scopeName": "source.octave",
+				"path": "./syntaxes/Octave.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "octave",
+				"path": "./snippets.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
