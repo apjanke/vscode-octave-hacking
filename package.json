@@ -3,6 +3,10 @@
 	"displayName": "Octave Hacking",
 	"description": "Support for GNU Octave programming",
 	"publisher": "apjanke",
+	"author": {
+		"name": "Andrew Janke",
+		"email": "floss@apjanke.net"
+	},
 	"version": "0.2.4",
 	"repository": {
 		"type": "git",
