@@ -12,7 +12,7 @@
 		"vscode": "^1.41.0"
 	},
 	"categories": [
-		"Programming Languages"
+		"Programming Languages", "Snippets"
 	],
 	"activationEvents": [
 		"onLanguage:octave"
@@ -33,6 +33,10 @@
 			"language": "octave",
 			"scopeName": "source.octave",
 			"path": "./syntaxes/Octave.tmLanguage"
+		}],
+		"snippets": [{
+			"language": "octave",
+			"path": "./snippets.json"
 		}]
 	},
 	"scripts": {
