@@ -13,4 +13,6 @@ Nothing yet.
 
 ## Author
 
-Octave Hacking is written by Andrew Janke. The project home page is https://github.com/apjanke/vscode-octave-hacking.
+Octave Hacking is written by [Andrew Janke](https://apjanke.net).
+
+The project home page is https://github.com/apjanke/vscode-octave-hacking.
