@@ -9,6 +9,10 @@ Octave Hacking is an attempt to turn VS Code into a decent IDE for GNU Octave.
 * Snippets
   * functions, classdefs, and common control structures
 
+## Example
+
+![Screenshot of Octave Hacking VS Code extension](images/screenshot.png)
+
 ## Extension Settings
 
 Nothing yet.
@@ -17,6 +21,6 @@ Nothing yet.
 
 Octave Hacking is written by [Andrew Janke](https://apjanke.net).
 
-The project home page is https://github.com/apjanke/vscode-octave-hacking.
+The project home page is <https://github.com/apjanke/vscode-octave-hacking>.
 
 Octave Hacking logo produced by [funny.pho.to's Matrix Image Generator](http://funny.pho.to/matrix-image-generator).
