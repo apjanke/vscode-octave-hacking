@@ -3,7 +3,7 @@
 	"displayName": "Octave Hacking",
 	"description": "Support for GNU Octave programming",
 	"publisher": "apjanke",
-	"version": "0.2.3",
+	"version": "0.2.4",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/apjanke/vscode-octave-hacking"
