@@ -22,6 +22,10 @@ Code navigation!
 
 ![Screencast of Octave Hacking navigation using Outline View](images/outline-navigation.gif)
 
+Snippets!
+
+![Screencast of Octave Hacking snippets in action](images/snippets.gif)
+
 ## Background
 
 [GNU Octave](https://www.gnu.org/software/octave/) is a scientific programming language for numerical analysis that is largely compatible with [MATLAB](https://www.mathworks.com/products/matlab.html). It is free software, cross-platform, and has pervasive support for arrays.
