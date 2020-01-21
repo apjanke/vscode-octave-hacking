@@ -17,7 +17,7 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 
 			for (var i = 0; i < document.lineCount; i++) {
 				var line = document.lineAt(i);
-				var pat = new RegExp('^\\s*function\\s+((?:[\\[\\]\\s\\w_,~]*?\\s*=)?\\s*(\\w+).*)');
+				var pat = new RegExp('^\\s*function\\s+((?:[\\[\\]\\s\\w_,~]*?\\s*=)?\\s*([\\w\\.]+).*)');
 				if (pat.test(line.text)) {
 					var match = line.text.match(pat);
 					let details = match![1];
