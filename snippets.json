@@ -57,7 +57,7 @@
     "body": [
       "## -*- texinfo -*-",
       "## @node ${1:function}",
-      "## @deftypefn {Function} {@var{$2:argouts} =} $1 ($3)",
+      "## @deftypefn {Function} {@var{${2:argouts}} =} $1 ($3)",
       "##",
       "## @end deftypefn",
       "function ${2} = $1 ($4)",
