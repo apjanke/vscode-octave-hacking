@@ -35,3 +35,5 @@ Octave Hacking is written by [Andrew Janke](https://apjanke.net).
 The project home page is <https://github.com/apjanke/vscode-octave-hacking>.
 
 Octave Hacking logo produced by [funny.pho.to's Matrix Image Generator](http://funny.pho.to/matrix-image-generator), based on the original [Octave logo](https://www.gnu.org/software/octave/img/octave-logo.svg) by the Octave Developers.
+
+The grammar for syntax highlighting is a lightly customized version of the [TextMate Octave.tmLanguage grammar](https://github.com/textmate/matlab.tmbundle/blob/master/Syntaxes/Octave.tmLanguage).
