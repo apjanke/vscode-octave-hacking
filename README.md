@@ -20,11 +20,11 @@ For that, I recommend you install the [Octave Debugger](https://marketplace.visu
 
 Code navigation!
 
-![Screencast of Octave Hacking navigation using Outline View](images/outline-navigation.gif)
+![Screencast of Octave Hacking navigation using Outline View](https://github.com/apjanke/vscode-octave-hacking/raw/master/site-assets/outline-navigation.gif)
 
 Snippets!
 
-![Screencast of Octave Hacking snippets in action](images/snippets.gif)
+![Screencast of Octave Hacking snippets in action](https://github.com/apjanke/vscode-octave-hacking/raw/master/site-assets/snippets.gif)
 
 ## Background
 
