@@ -2,14 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>name</key>
+	<string>Octave</string>
+	<key>uuid</key>
+	<string>73B98234-BE68-4197-B6D1-AAB32684114D</string>
+	<key>scopeName</key>
+	<string>source.octave</string>
 	<key>fileTypes</key>
 	<array>
 		<string>m</string>
 	</array>
-	<key>keyEquivalent</key>
-	<string>^~O</string>
-	<key>name</key>
-	<string>Octave</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -485,7 +487,32 @@
 			<key>comment</key>
 			<string>Octave constants</string>
 			<key>match</key>
-			<string>\b(argv|e|eps|false|F_DUPFD|F_GETFD|F_GETFL|filesep|F_SETFD|F_SETFL|i|I|inf|Inf|j|J|NA|nan|NaN|O_APPEND|O_ASYNC|O_CREAT|OCTAVE_HOME|OCTAVE_VERSION|O_EXCL|O_NONBLOCK|O_RDONLY|O_RDWR|O_SYNC|O_TRUNC|O_WRONLY|pi|program_invocation_name|program_name|P_tmpdir|realmax|realmin|SEEK_CUR|SEEK_END|SEEK_SET|SIG|stderr|stdin|stdout|true|ans|automatic_replot|beep_on_error|completion_append_char|crash_dumps_octave_core|current_script_file_name|debug_on_error|debug_on_interrupt|debug_on_warning|debug_symtab_lookups|DEFAULT_EXEC_PATH|DEFAULT_LOADPATH|default_save_format|echo_executing_commands|EDITOR|EXEC_PATH|FFTW_WISDOM_PROGRAM|fixed_point_format|gnuplot_binary|gnuplot_command_axes|gnuplot_command_end|gnuplot_command_plot|gnuplot_command_replot|gnuplot_command_splot|gnuplot_command_title|gnuplot_command_using|gnuplot_command_with|gnuplot_has_frames|history_file|history_size|ignore_function_time_stamp|IMAGEPATH|INFO_FILE|INFO_PROGRAM|__kluge_procbuf_delay__|LOADPATH|MAKEINFO_PROGRAM|max_recursion_depth|octave_core_file_format|octave_core_file_limit|octave_core_file_name|output_max_field_width|output_precision|page_output_immediately|PAGER|page_screen_output|print_answer_id_name|print_empty_dimensions|print_rhs_assign_val|PS1|PS2|PS4|save_header_format_string|save_precision|saving_history|sighup_dumps_octave_core|sigterm_dumps_octave_core|silent_functions|split_long_rows|string_fill_char|struct_levels_to_print|suppress_verbose_help_message|variables_can_hide_functions|warn_assign_as_truth_value|warn_divide_by_zero|warn_empty_list_elements|warn_fortran_indexing|warn_function_name_clash|warn_future_time_stamp|warn_imag_to_real|warn_matlab_incompatible|warn_missing_semicolon|warn_neg_dim_as_zero|warn_num_to_str|warn_precedence_change|warn_reload_forces_clear|warn_resize_on_range_error|warn_separator_insert|warn_single_quote_string|warn_str_to_num|warn_undefined_return_values|warn_variable_switch_label|whos_line_format)\b</string>
+			<string>(?x)
+				\b(argv|e|eps|false|filesep|F_DUPFD|F_GETFD|F_GETFL|F_SETFD|F_SETFL
+				|i|I|inf|Inf|j|J|NA|nan|NaN
+				|O_APPEND|O_ASYNC|O_CREAT|OCTAVE_HOME|OCTAVE_VERSION|O_EXCL|O_NONBLOCK|O_RDONLY|O_RDWR|O_SYNC|O_TRUNC|O_WRONLY
+				|pi|program_invocation_name|program_name|P_tmpdir|realmax|realmin
+				|SEEK_CUR|SEEK_END|SEEK_SET|SIG|stderr|stdin|stdout|true
+				|ans|automatic_replot|beep_on_error|completion_append_char|crash_dumps_octave_core|current_script_file_name
+				|debug_on_error|debug_on_interrupt|debug_on_warning|debug_symtab_lookups|DEFAULT_EXEC_PATH|DEFAULT_LOADPATH
+				|default_save_format|echo_executing_commands|EDITOR|EXEC_PATH|FFTW_WISDOM_PROGRAM|fixed_point_format
+				|gnuplot_binary|gnuplot_command_axes|gnuplot_command_end|gnuplot_command_plot|gnuplot_command_replot
+				|gnuplot_command_splot|gnuplot_command_title|gnuplot_command_using|gnuplot_command_with|gnuplot_has_frames
+				|history_file|history_size|ignore_function_time_stamp|IMAGEPATH|INFO_FILE|INFO_PROGRAM|__kluge_procbuf_delay__
+				|LOADPATH|MAKEINFO_PROGRAM|max_recursion_depth|octave_core_file_format|octave_core_file_limit
+				|octave_core_file_name|output_max_field_width|output_precision
+				|page_output_immediately|PAGER|page_screen_output|print_answer_id_name|print_empty_dimensions
+				|print_rhs_assign_val|PS1|PS2|PS4
+				|save_header_format_string|save_precision|saving_history|sighup_dumps_octave_core|sigterm_dumps_octave_core
+				|silent_functions|split_long_rows|string_fill_char|struct_levels_to_print|suppress_verbose_help_message
+				|variables_can_hide_functions
+				|warn_assign_as_truth_value|warn_divide_by_zero|warn_empty_list_elements|warn_fortran_indexing
+				|warn_function_name_clash|warn_future_time_stamp|warn_imag_to_real|warn_matlab_incompatible|warn_missing_semicolon
+				|warn_neg_dim_as_zero|warn_num_to_str|warn_precedence_change|warn_reload_forces_clear|warn_resize_on_range_error
+				|warn_separator_insert|warn_single_quote_string|warn_str_to_num|warn_undefined_return_values
+				|warn_variable_switch_label
+				|whos_line_format
+				)\b</string>
 			<key>name</key>
 			<string>constant.language.octave</string>
 		</dict>
@@ -494,7 +521,13 @@
 			<key>comment</key>
 			<string>Control keywords</string>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(all_va_args|break|case|catch|continue|else|end|for|parfor|elseif|end_try_catch|end_unwind_protect|endfor|endparfor|endfunction|endif|endwhile|global|gplot|gsplot|if|otherwise|persistent|replot|return|static|start|startat|stop|switch|try|until|unwind_protect|unwind_protect_cleanup|varargin|varargout|wait|while)\b</string>
+			<string>(?x)
+				(?&lt;!\.)\b(all_va_args|break|case|catch|continue|else|end|for|parfor|elseif
+				|end_try_catch|end_unwind_protect|endfor|endparfor|endfunction|endif|endwhile
+				|global|gplot|gsplot|if|otherwise|persistent|replot|return|static
+				|start|startat|stop|switch|try|until|unwind_protect|unwind_protect_cleanup
+				|varargin|varargout|wait|while
+				)\b</string>
 			<key>name</key>
 			<string>keyword.control.octave</string>
 		</dict>
@@ -503,7 +536,8 @@
 		  <key>comment</key>
 			<string>Structure keywords</string>
 			<key>match</key>
-			<string>\b(classdef|endclassdef|endevents|endenumeration|endmethods|endproperties|enumeration|events|methods|properties)</string>
+			<string>(?x)\b(classdef|endclassdef|endevents|endenumeration|endmethods|endproperties
+				|enumeration|events|methods|properties)</string>
 			<key>name</key>
 			<string>keyword.structure.octave</string>
 		</dict>
@@ -522,7 +556,8 @@
 			<key>comment</key>
 			<string>Operator symbols</string>
 			<key>match</key>
-			<string>\s*(\+\+|--|\+=|-=|\*=|\/=|\^=|\.\*=|\.\/=|\.\^=|==|~=|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^|!)\s*</string>
+			<string>(?x)\s*(\+\+|--|\+=|-=|\*=|\/=|\^=|\.\*=|\.\/=|\.\^=|==|~=
+				|&gt;|&gt;=|&lt;|&lt;=|&amp;|&amp;&amp;|:|\||\|\||\+|-|\*|\.\*|/|\./|\\|\.\\|\^|\.\^|!)\s*</string>
 			<key>name</key>
 			<string>keyword.operator.symbols.octave</string>
 		</dict>
@@ -691,9 +726,5 @@
 			<string>invalid.illegal.incomplete-variable-assignment.octave</string>
 		</dict>
 	</dict>
-	<key>scopeName</key>
-	<string>source.octave</string>
-	<key>uuid</key>
-	<string>73B98234-BE68-4197-B6D1-AAB32684114D</string>
 </dict>
 </plist>
