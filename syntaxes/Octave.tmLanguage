@@ -502,6 +502,7 @@
 			<key>name</key>
 			<string>keyword.structure.octave</string>
 		</dict>
+		<key>octave_special_functions</key>
 		<dict>
 		  <key>comment</key>
 			<string>Special functions</string>
