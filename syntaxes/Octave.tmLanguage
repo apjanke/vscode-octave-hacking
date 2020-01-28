@@ -695,7 +695,7 @@
 			<key>comment</key>
 			<string>Valid variable.</string>
 			<key>match</key>
-			<string>\b[a-zA-Z]\w*\b</string>
+			<string>\b[a-zA-Z_]\w*\b</string>
 			<key>name</key>
 			<string>variable.other.valid.octave</string>
 		</dict>
