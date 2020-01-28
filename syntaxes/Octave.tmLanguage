@@ -2,14 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>name</key>
+	<string>Octave</string>
+	<key>uuid</key>
+	<string>73B98234-BE68-4197-B6D1-AAB32684114D</string>
+	<key>scopeName</key>
+	<string>source.octave</string>
 	<key>fileTypes</key>
 	<array>
 		<string>m</string>
 	</array>
-	<key>keyEquivalent</key>
-	<string>^~O</string>
-	<key>name</key>
-	<string>Octave</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -724,9 +726,5 @@
 			<string>invalid.illegal.incomplete-variable-assignment.octave</string>
 		</dict>
 	</dict>
-	<key>scopeName</key>
-	<string>source.octave</string>
-	<key>uuid</key>
-	<string>73B98234-BE68-4197-B6D1-AAB32684114D</string>
 </dict>
 </plist>
