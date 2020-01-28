@@ -17,14 +17,14 @@
 		<dict>
 			<key>begin</key>
 			<string>(?x)
-(?=function\b)
-(?&lt;=^|\s)(function)\s+ # the function keyword
-(?&gt;\[(.*)\])?\t # match various different combination of output arguments:
-((?&gt;[a-zA-Z_]\w*))?
-(?&gt;\s*=\s*)?
-((?&gt;[a-zA-Z_]\w*(?&gt;[?!]|=(?!&gt;))? )) # the function name
-(?=[ \t]*[^\s%|#]) # make sure arguments and not a comment follow
-\s*(\() # the opening parenthesis for arguments
+				(?=function\b)
+				(?&lt;=^|\s)(function)\s+ # the keyword "function"
+				(?&gt;\[(.*)\])?\t  # match various different combination of output arguments
+				((?&gt;[a-zA-Z_]\w*))?
+				(?&gt;\s*=\s*)?
+				((?&gt;[a-zA-Z_][\w\.]*(?&gt;[?!]|=(?!&gt;))? )) # the function name
+				(?=[ \t]*[^\s%|#])  # make sure arguments and not a comment follow
+				\s*(\()             # the opening parenthesis for arguments
 			</string>
 			<key>beginCaptures</key>
 			<dict>
@@ -62,7 +62,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.with-arguments.octave</string>
+			<string>meta.function.with-argouts.octave</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -90,14 +90,14 @@
 			</dict>
 			<key>match</key>
 			<string>(?x)
-(?=function\b)
-(?&lt;=^|\s)(function)\s+ # the function keyword
-(?&gt;\[(.*)\])? # match various different combination of output arguments
-((?&gt;[a-zA-Z_]\w*))?
-(?&gt;\s*=\s*)?
-((?&gt;[a-zA-Z_]\w*(?&gt;[?!]|=(?!&gt;))? )) # the function name</string>
+				(?=function\b)
+				(?&lt;=^|\s)(function)\s+ # the function keyword
+				(?&gt;\[(.*)\])? # match various different combination of output arguments
+				((?&gt;[a-zA-Z_]\w*))?
+				(?&gt;\s*=\s*)?
+				((?&gt;[a-zA-Z_][\w\.]*(?&gt;[?!]|=(?!&gt;))? )) # the function name</string>
 			<key>name</key>
-			<string>meta.function.without-arguments.octave</string>
+			<string>meta.function.without-argouts.octave</string>
 		</dict>
 		<dict>
 			<key>include</key>
