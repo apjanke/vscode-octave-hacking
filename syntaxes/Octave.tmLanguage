@@ -294,6 +294,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#octave_keyword_structure</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#octave_constant_language</string>
 				</dict>
 				<dict>
@@ -498,7 +502,7 @@
 		  <key>comment</key>
 			<string>Structure keywords</string>
 			<key>match</key>
-			<string>\b(classdef|endclassdef|endevents|endenumeration|endfunctions|endproperties|enumeration|events|functions|properties)</string>
+			<string>\b(classdef|endclassdef|endevents|endenumeration|endmethods|endproperties|enumeration|events|methods|properties)</string>
 			<key>name</key>
 			<string>keyword.structure.octave</string>
 		</dict>
