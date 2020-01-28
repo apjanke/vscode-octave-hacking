@@ -153,14 +153,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#variable_invalid</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#not_equal_invalid</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>#variable_assignment</string>
 		</dict>
 	</array>
@@ -311,10 +303,6 @@
 					<key>include</key>
 					<string>#octave_support_function</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#octave_support_external</string>
-				</dict>
 			</array>
 		</dict>
 		<key>allofem</key>
@@ -360,10 +348,6 @@
 				<dict>
 					<key>include</key>
 					<string>#variable</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#variable_invalid</string>
 				</dict>
 				<dict>
 					<key>include</key>
