@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Octave Hacking extension activating');
 	context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider(
-		{language: "octave"}, new OctaveDocumentSymbolProvider()
+		{language: 'octave'}, new OctaveDocumentSymbolProvider()
 	));
 	console.log('Octave Hacking extension activated');
 }
