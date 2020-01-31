@@ -26,6 +26,13 @@ Snippets!
 
 ![Screencast of Octave Hacking snippets in action](https://github.com/apjanke/vscode-octave-hacking/raw/master/site-assets/snippets.gif)
 
+## Compatibility
+
+This extension may conflict with the Matlab extensions in the VS Code Marketplace.
+I’ve found that when I have the Matlab extensions installed, even when they are disabled, sometimes Octave Hacking will not activate when opening a `.m` file.
+I'm looking in to this.
+In the mean time, if you’re having trouble getting Octave Hacking to work, try uninstalling (not just deactivating) any Matlab VS Code extensions.
+
 ## Background
 
 [GNU Octave](https://www.gnu.org/software/octave/) is a scientific programming language for numerical analysis that is largely compatible with [MATLAB](https://www.mathworks.com/products/matlab.html). It is free software, cross-platform, and has pervasive support for arrays.
