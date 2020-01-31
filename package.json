@@ -32,11 +32,14 @@
 			{
 				"id": "octave",
 				"aliases": [
-					"Octave",
-					"octave"
+					"Octave"
 				],
 				"extensions": [
 					".m"
+				],
+				"filenames": [
+					"PKG_ADD",
+					"PKG_DEL"
 				],
 				"configuration": "./language-configuration.json"
 			}

@@ -12,9 +12,10 @@ In this document, "the syntax" refers to the Octave M-code syntax definition ins
 
 ### Fixed
 
-* Reformatted CHANGELOG to be closer to [Keep a Changelog](https://keepachangelog.com/en/1.0.0) format, and be more markdownlint-clean.
 * Bump dependencies with security vulnerabilities: lodash, y18n, ansi-regex, minimist, mocha, path-parse.
 * Add support for getter/setter method names with dots in them (like `get.foo`).
+* Recognize PKG_ADD and PKG_DEL files as Octave scripts.
+* Reformatted CHANGELOG to be closer to [Keep a Changelog](https://keepachangelog.com/en/1.0.0) format, and be more markdownlint-clean.
 * The language is now referred to as "Octave" instead of "Matlab" in user presentation elements of the syntax.
 
 ### Changed
