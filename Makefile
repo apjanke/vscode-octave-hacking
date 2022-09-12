@@ -11,3 +11,7 @@ dist:
 	mkdir -p dist
 	vsce package
 	mv octave-hacking-* dist
+
+.PHONY: clean
+clean:
+	rm -rf *.vsix out/*
