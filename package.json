@@ -7,7 +7,7 @@
 		"name": "Andrew Janke",
 		"email": "floss@apjanke.net"
 	},
-	"version": "0.2.14",
+	"version": "0.2.15-SNAPSHOT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/apjanke/vscode-octave-hacking"
