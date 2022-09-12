@@ -1,4 +1,22 @@
-node_modules
-out
-dist
+# .gitignore for a Octave Hacking VS Code extension
+#
+# Based on https://github.com/microsoft/vscode-extension-samples/blob/main/.gitignore
+
+# Regular VS Code extension ignores
+
+npm-debug.log
+node_modules/
+out/
+.vs/
+tsconfig.lsif.json
+*.lsif
+*.db
+
 *.vsix
+
+.DS_Store
+Thumbs.db
+
+# Octave Hacking specific ignores
+
+dist/
