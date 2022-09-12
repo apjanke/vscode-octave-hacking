@@ -7,7 +7,7 @@
 		"name": "Andrew Janke",
 		"email": "floss@apjanke.net"
 	},
-	"version": "0.2.12",
+	"version": "0.2.13-SNAPSHOT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/apjanke/vscode-octave-hacking"
@@ -16,7 +16,7 @@
 		"url": "https://github.com/apjanke/vscode-octave-hacking/issues"
 	},
 	"engines": {
-		"vscode": "^1.41.0"
+		"vscode": "^1.71.0"
 	},
 	"categories": [
 		"Programming Languages",
@@ -66,21 +66,21 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.7",
-		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.41.0",
-		"glob": "^7.1.5",
+		"@types/glob": "^8.0.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "^16.11.58",
+		"@types/vscode": "^1.71.0",
+		"@vscode/test-electron": "^2.1.5",
+		"glob": "^8.0.3",
 		"log-symbols": "^5.1.0",
 		"mkdirp": "^1.0.4",
-		"mocha": "^6.2.3",
+		"mocha": "^9.2.2",
 		"object-inspect": "^1.12.2",
 		"path-parse": "^1.0.7",
 		"side-channel": "^1.0.4",
 		"sprintf-js": "^1.1.2",
-		"tslint": "^5.20.1",
-		"typescript": "^3.9.10",
-		"vscode-test": "^1.2.2"
+		"tslint": "^6.1.3",
+		"typescript": "^4.8.3"
 	},
 	"dependencies": {
 		"ansi-colors": "^4.1.3",
@@ -94,6 +94,7 @@
 		"once": "^1.4.0",
 		"rimraf": "^3.0.2",
 		"semver": "^7.3.7",
-		"set-blocking": "^2.0.0"
+		"set-blocking": "^2.0.0",
+		"types": "^0.1.1"
 	}
 }
