@@ -4,7 +4,8 @@ See VS Code's ["Publishing Extensions" document](https://code.visualstudio.com/a
 
 To create and publish a new release, do the following:
 
-1. Make sure `CHANGELOG.md` is up to date
+1. Make sure `CHANGELOG.md` is up to date.
+1. Do a `make clean` to be sure we get a fresh, reproducible build.
 1. Test it. We have no automated tests, so run it interactively and play around with it.
 1. Update the version in `package.json` and `CHANGELOG.md` and commit.
     1. Use git commit message `"Release v<version>"`.
@@ -18,5 +19,8 @@ To create and publish a new release, do the following:
     1. Use a `-SNAPSHOT` suffix in the version number to indiate it's in development.
     1. Use git commit message `"Open development for next release"`.
 1. Create a Release on GitHub.
-    1. Name it `"Version <version>"`
+    1. Name it `"Version <version>"`.
+    1. Copy the Changelog section for this release to the release notes/description field in the GitHub release creation page.
+    1. Attach the `.vsix` file from `vsce package` as a binary for the release.
 1. Publish it to VS Code Marketplace with `vsce publish`.
+    1. *Check out the release tag in git before doing this.*
