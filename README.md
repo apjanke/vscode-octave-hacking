@@ -9,6 +9,10 @@ Octave Hacking is an attempt to turn VS Code into a decent IDE for [GNU Octave](
 * Code snippets
   * Functions, classdefs, and some common control structures
 
+## Installation
+
+To install Octave Hacking in your VS Code, [get it on the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=apjanke.octave-hacking), or search for "octave hacking" in the Extensions tab of VS Code.
+
 ## Debugging
 
 Octave Hacking does not support debugging Octave inside VS Code.
