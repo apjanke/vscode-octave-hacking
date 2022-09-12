@@ -16,15 +16,15 @@ For that, I recommend you install the [Octave Debugger](https://marketplace.visu
 
 ## Examples
 
-![Screenshot of Octave Hacking VS Code extension](images/screenshot.png)
+![Screenshot of Octave Hacking VS Code extension](/images/screenshot.png)
 
 Code navigation!
 
-![Screencast of Octave Hacking navigation using Outline View](https://github.com/apjanke/vscode-octave-hacking/raw/master/site-assets/outline-navigation.gif)
+![Screencast of Octave Hacking navigation using Outline View](/site-assets/outline-navigation.gif)
 
 Snippets!
 
-![Screencast of Octave Hacking snippets in action](https://github.com/apjanke/vscode-octave-hacking/raw/master/site-assets/snippets.gif)
+![Screencast of Octave Hacking snippets in action](/site-assets/snippets.gif)
 
 ## Compatibility
 
@@ -49,7 +49,7 @@ Octave Hacking is published under the open-source MIT License.
 
 The original [TextMate Octave grammar](https://github.com/textmate/matlab.tmbundle/blob/2cdc1f841443e4bc8b94f42f5e86431b31e04387/Syntaxes/Octave.tmLanguage) on which Octave Hacking's syntax is based is published under a custom, but (I think) MIT-compatible license. That [TextMate grammar license](https://github.com/textmate/matlab.tmbundle/tree/2cdc1f841443e4bc8b94f42f5e86431b31e04387#license) text is:
 
-```
+```text
 Permission to copy, use, modify, sell and distribute this
 software is granted. This software is provided "as is" without
 express or implied warranty, and with no claim as to its
