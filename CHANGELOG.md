@@ -10,6 +10,9 @@ In this document, "the syntax" refers to the Octave M-code syntax definition ins
 
 ## [Unreleased]
 
+### Fixed
+
+* Reduce vscode engine requirement to 1.60.0 to support older versions of VS Code.
 
 ## [0.2.13] - 2022-09-12
 
