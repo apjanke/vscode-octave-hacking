@@ -38,10 +38,18 @@ Nothing yet.
 
 ## Author
 
-Octave Hacking is written by [Andrew Janke](https://apjanke.net).
+Octave Hacking is written by [Andrew Janke](https://apjanke.net). The project home page is <https://github.com/apjanke/vscode-octave-hacking>.
 
-The project home page is <https://github.com/apjanke/vscode-octave-hacking>.
+Thank you to the [GNU Octave](https://octave.org) folks for writing Octave!
 
 Octave Hacking logo produced by [funny.pho.to's Matrix Image Generator](http://funny.pho.to/matrix-image-generator), based on the original [Octave logo](https://www.gnu.org/software/octave/img/octave-logo.svg) by the Octave Developers.
 
 The grammar for syntax highlighting is a lightly customized version of the [TextMate Octave.tmLanguage grammar](https://github.com/textmate/matlab.tmbundle/blob/master/Syntaxes/Octave.tmLanguage).
+
+Andrew is also the maintainer of [Octave.app](https://octave-app.org/), a "native Mac app" distribution of GNU Octave. The Octave Hacking VS Code extension is compatible with Octave.app.
+
+## Contributing
+
+Development happens on GitHub at <https://github.com/apjanke/vscode-octave-hacking>.
+
+Bug reports, feature requests, and bugfix PRs are welcome. For other changes, like adding new features or code design changes, please post an [issue in the issue tracker on GitHub](https://github.com/apjanke/vscode-octave-hacking/issues) to discuss it first.
