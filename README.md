@@ -6,8 +6,8 @@ Octave Hacking is an attempt to turn VS Code into a decent IDE for [GNU Octave](
 
 * Syntax highlighting
 * Outline view and code navigation for functions
-* Snippets
-  * functions, classdefs, and common control structures
+* Code snippets
+  * Functions, classdefs, and some common control structures
 
 ## Debugging
 
@@ -42,6 +42,19 @@ The Octave Hacking extension may be particularly useful to Mac users, because th
 ## Extension Settings
 
 Nothing yet.
+
+## License
+
+Octave Hacking is published under the open-source MIT License.
+
+The original [TextMate Octave grammar](https://github.com/textmate/matlab.tmbundle/blob/2cdc1f841443e4bc8b94f42f5e86431b31e04387/Syntaxes/Octave.tmLanguage) on which Octave Hacking's syntax is based is published under a custom, but (I think) MIT-compatible license. That [TextMate grammar license](https://github.com/textmate/matlab.tmbundle/tree/2cdc1f841443e4bc8b94f42f5e86431b31e04387#license) text is:
+
+```
+Permission to copy, use, modify, sell and distribute this
+software is granted. This software is provided "as is" without
+express or implied warranty, and with no claim as to its
+suitability for any purpose.
+```
 
 ## Author
 
