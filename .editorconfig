@@ -1,0 +1,40 @@
+# Root .editorconfig for Octave Hacking
+
+# EditorConfig is awesome: https://EditorConfig.org
+
+root = true
+
+# We only set the indent_style on individual file types, because we may
+# have a mix of indent styles in test fixture *.m files and want to
+# preserve that, but I don't know how to define an override in .editorconfig
+# that "unsets" an inherited setting and reverts to "allow either".
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_size = 4
+
+[*.m]
+
+[Makefile]
+charset = utf-8
+indent_style = tab
+tab_width = 4
+
+[*.{json,ts,tmLanguage,md}]
+charset = utf-8
+indent_style = tab
+indent_size = 2
+
+# Markdownlint requires spaces by default
+[*.md]
+charset = utf-8
+indent_style = space
+indent_size = 2
+
+# This matches the style of the generated *.js files in out/
+[*.js]
+charset = utf-8
+indent_style = space
+indent_size = 2
