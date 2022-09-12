@@ -1,40 +1,74 @@
-Octave Hacking Change Log
-=========================
+# Octave Hacking Change Log
 
-0.2.12 (2020-01-28)
--------------------
+This file is a list of notable changes to the Octave Hacking VS Code extension.
 
-- Tweak the syntax to highlight classdef/methods/properties/etc as keywords
+This project attempts to adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) for its releases. But Andrew (its main developer) isn't good enough at TypeScript or VS Code extension development to guarantee that. Releases may be yanked and reversioned if we mess up bad enough on that front.
 
-0.2.4 - 0.2.11
-------------------
+This file is roughly in [Keep a Changelog](https://keepachangelog.com/en/1.0.0) format.
 
-- A bunch of minor bug fixes and tweaks to the syntax
+In this document, "the syntax" refers to the Octave M-code syntax definition inside the extension.
 
-0.2.3 (2020-01-20)
-------------------
+## [Unreleased]
 
-- Add project logo and screenshot
+### Fixed
 
-0.2.2 (2020-01-20)
-------------------
+* Reformatted CHANGELOG to be closer to [Keep a Changelog](https://keepachangelog.com/en/1.0.0) format, and be more markdownlint-clean.
+* Bump dependencies with security vulnerabilities: lodash, y18n, ansi-regex, minimist, mocha, path-parse.
+* Add support for getter/setter method names with dots in them (like `get.foo`).
+* The language is now referred to as "Octave" instead of "Matlab" in user presentation elements of the syntax.
 
-- Fix CHANGELOG
+### Changed
 
-0.2.1 (2020-01-20)
-------------------
+* Expanded README with Contributing info, thank-you to GNU Octave, and note about Octave.app.
+* Added some coding guidelines to DeveloperNotes.
 
-- Fix README
+## [0.2.12] - 2020-01-28
 
-0.2.0 (2020-01-20)
-------------------
+### Changed
 
-- Add a few basic snippets
-- Fix CHANGELOG formatting
+* Tweaked the syntax to highlight classdef/methods/properties/etc as keywords.
 
-0.1.0 (2020-01-20)
-------------------
+## [0.2.4] - 0.2.11
 
-- Initial release
-- Syntax highlighting
-- Basic code navigation with Outline view
+### Fixed
+
+* Several minor bug fixes.
+* Some tweaks to the syntax definition.
+
+## [0.2.3] - 2020-01-20
+
+### Added
+
+* Added project logo and screenshot.
+
+## [0.2.2] - 2020-01-20
+
+### Fixed
+
+* Fixed CHANGELOG contents.
+
+## [0.2.1] - 2020-01-20
+
+### Fixed
+
+* Fixed content in README.
+
+## [0.2.0] - 2020-01-20
+
+### Added
+
+* Added a few basic code snippets.
+
+### Fixed
+
+* Fixed CHANGELOG formatting.
+
+## [0.1.0] - 2020-01-20
+
+Initial preview release.
+
+### Added
+
+* Syntax definition, based on the [Textmate Octave grammar](https://github.com/textmate/matlab.tmbundle/blob/master/Syntaxes/Octave.tmLanguage).
+* Syntax highlighting of Octave code.
+* Basic code navigation with Outline view.
