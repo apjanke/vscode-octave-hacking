@@ -22,18 +22,23 @@ charset = utf-8
 indent_style = tab
 tab_width = 4
 
-[*.{json,ts,tmLanguage,md}]
+[*.{json,ts,tmLanguage}]
 charset = utf-8
 indent_style = tab
 indent_size = 2
 
-# Markdownlint requires spaces by default
+# Markdownlint requires spaces (and I think specificall 2 spaces).
+#
+# Nested ordered lists in Markdown won't render right everywhere with
+# 2-space indents. You need 4-space indents for those. But unordered lists
+# need to be 2-space indents, per markdownlint. Make it 2-space
+# indents, and the author can double-indent nested ordered lists.
 [*.md]
 charset = utf-8
 indent_style = space
 indent_size = 2
 
-# This matches the style of the generated *.js files in out/
+# This matches the style of the generated *.js files in out/.
 [*.js]
 charset = utf-8
 indent_style = space
