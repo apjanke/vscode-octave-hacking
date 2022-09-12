@@ -2,32 +2,41 @@
 
 ## Goals
 
-* Syntax highlighting, in my preferred style
+* Syntax highlighting, in my preferred style.
   * Only keywords highlighted, not all functions?
-* Nice outline
-  * Need a DocumentSymbolProvider for this
-* Intellisense
-* Linting
-  * This will require writing a whole Octave linter, since none exists
-* Go to definition
-* Refactoring
-  * Rename, with correct scope identification
-* Function signature help
-* Debugging/run Octave in a console window
-  * Hover over variable in editor to see its value
+  * Some configurability of the highlighting.
+* Nice outline.
+  * Need a DocumentSymbolProvider for this.
+* Intellisense.
+* Linting.
+  * This will require writing a whole Octave linter, since none exists.
+* Go to definition.
+* Refactoring.
+  * Rename, with correct scope identification.
+* Function signature help.
+* Debugging/run Octave in a console window.
+  * Hover over variable in editor to see its value.
 * Profiler results in a web view?
-* Embedded Texinfo language support
-* Auto-indentation
+* Embedded Texinfo language support.
+* Auto-indentation.
+
+### Goals: Done
+
+* Code folding.
+* Matching-paren bouncing with Ctrl-Shift-5 (like % in vim).
+* Snippets in my preferred form.
 
 ## TODO: Concrete steps
 
-* Get classdef/methods/properties highlighted as keywords
+* Figure out how to easily run and debug the extension, without an installation step, and *document* that here.
+* Figure out how to configure markdownlint, especially so it doesn't complain about the Changelog format.
+* Get classdef/methods/properties highlighted as keywords.
 
-## Goals: Done
+## Development process and guidelines
 
-* Code folding
-* Matching-paren bouncing with Ctrl-Shift-5 (like % in vim)
-* Snippets in my preferred form
+I prefer a linear commit history in git. So PRs on GitHub should generally be merged using the "Rebase and fast-forward" option instead of a regular merge which produces a merge commit. Merge commits can be used if there's a big PR with several commits, and we want to keep track of that fact in our git history.
+
+The CHANGELOG is in [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
 
 ## Inspirations
 
