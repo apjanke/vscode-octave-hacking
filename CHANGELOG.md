@@ -1,4 +1,4 @@
-# Octave Hacking Change Log
+# Octave Hacking for VS Code Change Log
 
 This file is a list of notable changes to the Octave Hacking VS Code extension.
 
