@@ -10,21 +10,27 @@ root = true
 # that "unsets" an inherited setting and reverts to "allow either".
 
 [*]
+charset = utf-8
 end_of_line = lf
+indent_size = 2
+indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
-indent_size = 4
 
 [*.m]
+indent_size = 2
 
 [Makefile]
-charset = utf-8
 indent_style = tab
-tab_width = 4
 
+# I can't remember why I used tabs for these languages?
 [*.{json,ts,tmLanguage}]
-charset = utf-8
 indent_style = tab
+indent_size = 2
+
+# This matches the style of the generated *.js files in out/.
+[*.js]
+indent_style = space
 indent_size = 2
 
 # Markdownlint requires spaces (and I think specificall 2 spaces).
@@ -34,12 +40,5 @@ indent_size = 2
 # need to be 2-space indents, per markdownlint. Make it 2-space
 # indents, and the author can double-indent nested ordered lists.
 [*.md]
-charset = utf-8
-indent_style = space
 indent_size = 2
 
-# This matches the style of the generated *.js files in out/.
-[*.js]
-charset = utf-8
-indent_style = space
-indent_size = 2
