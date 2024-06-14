@@ -1,10 +1,18 @@
-import * as vscode from 'vscode';
+// import * as vscode from 'vscode';
+import vscode = require('vscode');
+import PeekFileDefinitionProvider from './PeekFileDefinitionProvider';
 
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Octave Hacking extension activating');
 	context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider(
 		{language: 'octave'}, new OctaveDocumentSymbolProvider()
 	));
+
+	context.subscriptions.push(vscode.languages.registerDefinitionProvider(
+    ['octave'],
+    new PeekFileDefinitionProvider()
+  ));
+
 	console.log('Octave Hacking extension activated');
 }
 
