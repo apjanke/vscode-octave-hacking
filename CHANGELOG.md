@@ -12,6 +12,8 @@ In this document, "the syntax" refers to the Octave M-code syntax definition ins
 
 ### Changed
 
+* Reclassify 'function' as a structure keyword instead of a control keyword.
+* Make 'switch' a bracketing symbol.
 * Bump dependencies with security vulnerabilities: braces, semver, word-wrap.
 * Bump all dependencies.
 

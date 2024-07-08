@@ -13,6 +13,7 @@
         ["if", "endif"],
         ["for", "endfor"],
         ["while", "endwhile"],
+        ["switch", "endswitch"],
         ["try", "end_try_catch"],
         ["unwind_protect", "end_unwind_protect"]
     ],
