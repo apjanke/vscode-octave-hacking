@@ -10,6 +10,11 @@ In this document, "the syntax" refers to the Octave M-code syntax definition ins
 
 ## [Unreleased]
 
+### Changed
+
+* Bump dependencies with security vulnerabilities: braces, semver, word-wrap.
+* Bump all dependencies.
+
 ## [0.2.14] - 2022-09-12
 
 ### Fixed
