@@ -507,7 +507,7 @@
 			<key>match</key>
 			<string>(?x)
 				(?&lt;!\.)\b(all_va_args|break|case|catch|continue|else|end|for|parfor|elseif
-				|end_try_catch|end_unwind_protect|endfor|endparfor|endfunction|endif|endwhile
+				|end_try_catch|end_unwind_protect|endfor|endparfor|endfunction|endif|endswitch|endwhile
 				|global|gplot|gsplot|if|otherwise|persistent|replot|return|static
 				|start|startat|stop|switch|try|until|unwind_protect|unwind_protect_cleanup
 				|varargin|varargout|wait|while

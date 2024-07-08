@@ -10,6 +10,10 @@ In this document, "the syntax" refers to the Octave M-code syntax definition ins
 
 ## [Unreleased]
 
+### Fixed
+
+* Add missing 'endswitch' keyword.
+
 ### Changed
 
 * Reclassify 'function' as a structure keyword instead of a control keyword.
