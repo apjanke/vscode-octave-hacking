@@ -8,6 +8,7 @@
 		"email": "floss@apjanke.net"
 	},
 	"version": "0.2.15-SNAPSHOT",
+	"homepage": "https://github.com/apjanke/vscode-octave-hacking",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/apjanke/vscode-octave-hacking"
