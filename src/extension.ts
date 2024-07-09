@@ -24,7 +24,7 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 					let argoutSig = match![2];
 					let name = match![3];
 					let arginSig = match![4];
-					let arginDeets = ""
+					let arginDeets = "";
 					if (arginSig !== undefined) {
 						arginDeets = arginSig.replace(/[#%].*$/, "").replace(/\bvarargin\b/, "...")
 						arginDeets = arginDeets.replace(/\bthis\b/, "_")
@@ -40,9 +40,22 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 					);
 					symbols.push(fcnSym);
 				}
+
+				let classdefPat = /^\s*classdef\s+(\w+)\s*(.*?)([#%;].*)?$/;
+				if (classdefPat.test(line.text)) {
+					let match = RegExp(classdefPat).exec(line.text);
+					let name = match![1];
+					let classDeetsText = match![2];
+					let classDeets = "";
+					if (classDeetsText !== undefined) {
+						classDeets = classDeetsText;
+					}
+					let classdefSym = new vscode.DocumentSymbol(
+						name, classDeets, vscode.SymbolKind.Class, line.range, line.range
+					);
+					symbols.push(classdefSym);
+				}
 			}
-
-
 
 			resolve(symbols);
 		});
