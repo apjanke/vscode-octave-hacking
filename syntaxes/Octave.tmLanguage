@@ -506,9 +506,9 @@
 			<string>Control keywords</string>
 			<key>match</key>
 			<string>(?x)
-				(?&lt;!\.)\b(all_va_args|break|case|catch|continue|else|end|for|parfor|elseif
-				|end_try_catch|end_unwind_protect|endfor|endparfor|endfunction|endif|endswitch|endwhile
-				|global|gplot|gsplot|if|otherwise|persistent|replot|return|static
+				(?&lt;!\.)\b(all_va_args|break|case|catch|continue|else|end|for|elseif
+				|end_try_catch|end_unwind_protect|endfor|endparfor|endif|endswitch|endwhile
+				|global|gplot|gsplot|if|otherwise|parfor|persistent|replot|return|static
 				|start|startat|stop|switch|try|until|unwind_protect|unwind_protect_cleanup
 				|varargin|varargout|wait|while
 				)\b</string>
@@ -520,8 +520,8 @@
 		  <key>comment</key>
 			<string>Structure keywords</string>
 			<key>match</key>
-			<string>(?x)\b(classdef|endclassdef|endevents|endenumeration|endmethods|endproperties
-				|enumeration|events|methods|properties)</string>
+			<string>(?x)\b(classdef|endclassdef|endenumeration|endevents|endfunction|endmethods
+				|endproperties|enumeration|events|function|methods|properties)</string>
 			<key>name</key>
 			<string>keyword.structure.octave</string>
 		</dict>
