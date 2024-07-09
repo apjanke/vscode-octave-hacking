@@ -17,17 +17,32 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 
 			for (let i = 0; i < document.lineCount; i++) {
 				let line = document.lineAt(i);
-				let pat = /^\s*function\s+((?:[[\]\s\w,~]*?\s*=)?\s*([\w.]+).*)/;
-				if (pat.test(line.text)) {
-					let match = RegExp(pat).exec(line.text);
-					let details = match![1];
-					let name = match![2];
-					let docSym = new vscode.DocumentSymbol(
-						name, details, vscode.SymbolKind.Function, line.range, line.range
+
+				let fcnPat = /^\s*function\s+(([[\]\s\w,~]*?\s*=\s*)?([\w.]+)\s*(\S.*))/;
+				if (fcnPat.test(line.text)) {
+					let match = RegExp(fcnPat).exec(line.text);
+					let argoutSig = match![2];
+					let name = match![3];
+					let arginSig = match![4];
+					let arginDeets = ""
+					if (arginSig !== undefined) {
+						arginDeets = arginSig.replace(/[#%].*$/, "").replace(/\bvarargin\b/, "...")
+						arginDeets = arginDeets.replace(/\bthis\b/, "_")
+					}
+					let sigDeets = arginDeets
+					if (argoutSig !== undefined) {
+						let argoutDeets = argoutSig.replace(/\s*=\s*$/, "")
+						argoutDeets = argoutDeets.replace(/\bthis\b/, "_")
+						sigDeets = sigDeets + " → " + argoutDeets  // or : or -> or →
+					}
+					let fcnSym = new vscode.DocumentSymbol(
+						name, sigDeets, vscode.SymbolKind.Function, line.range, line.range
 					);
-					symbols.push(docSym);
+					symbols.push(fcnSym);
 				}
 			}
+
+
 
 			resolve(symbols);
 		});
