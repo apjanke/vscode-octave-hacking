@@ -13,13 +13,13 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 	public provideDocumentSymbols(document: vscode.TextDocument,
 					token: vscode.CancellationToken): Thenable<vscode.DocumentSymbol[]> {
 		return new Promise((resolve, reject) => {
-			var symbols = [];
+			let symbols = [];
 
-			for (var i = 0; i < document.lineCount; i++) {
-				var line = document.lineAt(i);
-				var pat = new RegExp('^\\s*function\\s+((?:[\\[\\]\\s\\w_,~]*?\\s*=)?\\s*([\\w\\.]+).*)');
+			for (let i = 0; i < document.lineCount; i++) {
+				let line = document.lineAt(i);
+				let pat = /^\s*function\s+((?:[[\]\s\w,~]*?\s*=)?\s*([\w.]+).*)/;
 				if (pat.test(line.text)) {
-					var match = line.text.match(pat);
+					let match = RegExp(pat).exec(line.text);
 					let details = match![1];
 					let name = match![2];
 					let docSym = new vscode.DocumentSymbol(
@@ -35,4 +35,6 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 
 }
 
-export function deactivate() {}
+export function deactivate() {
+	console.log('Octave Hacking extension deactivated');
+}
