@@ -84,7 +84,7 @@
 		"glob": "^8.0.3",
 		"log-symbols": "^5.1.0",
 		"mkdirp": "^1.0.4",
-		"mocha": "^9.2.2",
+		"mocha": "^11.1.0",
 		"object-inspect": "^1.12.2",
 		"path-parse": "^1.0.7",
 		"prettier": "^2.7.1",
