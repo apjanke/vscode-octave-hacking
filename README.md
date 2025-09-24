@@ -30,6 +30,23 @@ Snippets!
 
 ![Screencast of Octave Hacking snippets in action](/site-assets/snippets.gif)
 
+## Running Octave
+
+Octave Hacking includes a command ("Run with Octave") to execute the currently opened file in Octave. The command is also accessible via the shortcut Ctrl+F5 ("Run Without Debugging"), via a button in the editor title or via the context menus on the editor tab or the file in the tree view.
+
+![Run the current opened file in Octave](/site-assets/screenshot-run-button.png)
+
+Octave executes and exits immediately. If you plot something and need to keep the display open, wrap your plot into:
+
+```octave
+h = figure();
+
+…
+
+drawnow;
+waitfor(h);
+```
+
 ## Compatibility
 
 This extension may conflict with the Matlab extensions in the VS Code Marketplace.

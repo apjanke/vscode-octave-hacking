@@ -8,6 +8,7 @@ npm-debug.log
 node_modules/
 out/
 .vs/
+.vscode/
 tsconfig.lsif.json
 *.lsif
 *.db
