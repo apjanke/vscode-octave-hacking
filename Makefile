@@ -5,11 +5,13 @@
 #
 # See doc-project/ReleaseChecklist.md and this Microsoft doc:
 #   https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+#
+# Be aware that vsce requires node.js 20.* or higher.
 
 .PHONY: dist
 dist:
 	mkdir -p dist
-	vsce package
+	npx vsce package
 	mv octave-hacking-* dist
 
 .PHONY: clean

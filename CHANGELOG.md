@@ -8,7 +8,17 @@ This file is roughly in [Keep a Changelog](https://keepachangelog.com/en/1.0.0) 
 
 In this document, "the syntax" refers to the Octave M-code syntax definition inside the extension.
 
-## [Unreleased]
+
+## [0.2.15] - 2025-09-24
+
+### Changed
+
+* Bumped some dependency versions
+
+### Added
+
+* Execute button, menu entries & command to run the currently opened file in Octave (Octave has to be in the PATH)
+* File icon for files tree and tab
 
 ## [0.2.14] - 2022-09-12
 

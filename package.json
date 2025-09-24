@@ -7,7 +7,7 @@
 		"name": "Andrew Janke",
 		"email": "floss@apjanke.net"
 	},
-	"version": "0.2.15-SNAPSHOT",
+	"version": "0.2.15",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/apjanke/vscode-octave-hacking"
@@ -16,7 +16,8 @@
 		"url": "https://github.com/apjanke/vscode-octave-hacking/issues"
 	},
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.60.0",
+		"node": ">=20"
 	},
 	"categories": [
 		"Programming Languages",
@@ -24,7 +25,8 @@
 	],
 	"icon": "images/octave-hacking-logo.png",
 	"activationEvents": [
-		"onLanguage:octave"
+		"onLanguage:octave",
+		"onCommand:octave.run"
 	],
 	"main": "./out/main.js",
 	"contributes": {
@@ -41,7 +43,11 @@
 					"PKG_ADD",
 					"PKG_DEL"
 				],
-				"configuration": "./language-configuration.json"
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"light": "./images/octave-logo.light.svg",
+					"dark": "./images/octave-logo.dark.svg"
+				}
 			}
 		],
 		"grammars": [
@@ -56,17 +62,64 @@
 				"language": "octave",
 				"path": "./snippets.json"
 			}
-		]
+		],
+		"commands": [
+			{
+				"command": "octave.run",
+				"title": "Run with Octave",
+				"category": "Octave",
+				"icon": {
+					"light": "./images/octave-run.light.svg",
+					"dark": "./images/octave-run.dark.svg"
+				}
+			}
+		],
+		"keybindings": [
+			{
+				"command": "octave.run",
+				"key": "ctrl+f5",
+				"when": "resourceLangId == octave"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "octave.run",
+					"when": "editorLangId == octave",
+					"group": "navigation@1"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "octave.run",
+					"when": "resourceLangId == octave",
+					"group": "3_preview"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "octave.run",
+					"when": "resourceLangId == octave",
+					"group": "0_octave"
+				}
+			],
+			"commandPalette": [
+				{
+					"command": "octave.run",
+					"when": "editorLangId == octave || resourceLangId == octave"
+				}
+			]
+		}
 	},
 	"scripts": {
-    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
-    "vscode:prepublish": "npm run esbuild-base -- --minify",
-    "build": "npm run esbuild-base -- --sourcemap",
-    "build-watch": "npm run esbuild-base -- --sourcemap --watch",
-    "fmt": "prettier --write \"src/**/*.ts\"&& npm run test -- --fix",
-    "test": "eslint src --ext ts && tsc --noEmit",
+		"esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+		"vscode:prepublish": "npm run esbuild-base -- --minify",
+		"build": "npm run esbuild-base -- --sourcemap",
+		"build-watch": "npm run esbuild-base -- --sourcemap --watch",
+		"fmt": "prettier --write \"src/**/*.ts\"&& npm run test -- --fix",
+		"test": "eslint src --ext ts && tsc --noEmit",
 		"compile": "tsc -p ./",
-    "test-compile": "tsc -p ./",
+		"test-compile": "tsc -p ./",
 		"pretest": "npm run compile",
 		"test-old": "node ./out/test/runTest.js",
 		"watch": "tsc -watch -p ./"
@@ -76,9 +129,10 @@
 		"@types/mocha": "^9.1.1",
 		"@types/node": "^16.11.58",
 		"@types/vscode": "^1.60.0",
-    "@typescript-eslint/eslint-plugin": "^5.36.2",
-    "@typescript-eslint/parser": "^5.36.2",
+		"@typescript-eslint/eslint-plugin": "^5.36.2",
+		"@typescript-eslint/parser": "^5.36.2",
 		"@vscode/test-electron": "^2.1.5",
+		"@vscode/vsce": "^3.6.1",
 		"esbuild": "^0.15.7",
 		"eslint": "^8.23.1",
 		"glob": "^8.0.3",

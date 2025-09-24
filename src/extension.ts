@@ -1,17 +1,22 @@
 import * as vscode from 'vscode';
+import { runOctaveInVSCodeTerminal } from './run-octave';
 
 export function activate(context: vscode.ExtensionContext) {
 	console.log('Octave Hacking extension activating');
+
 	context.subscriptions.push(vscode.languages.registerDocumentSymbolProvider(
-		{language: 'octave'}, new OctaveDocumentSymbolProvider()
+		{ language: 'octave' }, new OctaveDocumentSymbolProvider()
 	));
+
+	context.subscriptions.push(vscode.commands.registerCommand('octave.run', runOctaveInVSCodeTerminal));
+
 	console.log('Octave Hacking extension activated');
 }
 
 class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 
 	public provideDocumentSymbols(document: vscode.TextDocument,
-					token: vscode.CancellationToken): Thenable<vscode.DocumentSymbol[]> {
+		token: vscode.CancellationToken): Thenable<vscode.DocumentSymbol[]> {
 		return new Promise((resolve, reject) => {
 			var symbols = [];
 
@@ -35,4 +40,4 @@ class OctaveDocumentSymbolProvider implements vscode.DocumentSymbolProvider {
 
 }
 
-export function deactivate() {}
+export function deactivate() { }
