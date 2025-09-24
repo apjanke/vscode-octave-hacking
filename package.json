@@ -16,7 +16,8 @@
 		"url": "https://github.com/apjanke/vscode-octave-hacking/issues"
 	},
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.60.0",
+		"node": ">=20"
 	},
 	"categories": [
 		"Programming Languages",
@@ -79,6 +80,7 @@
 		"@typescript-eslint/eslint-plugin": "^5.36.2",
 		"@typescript-eslint/parser": "^5.36.2",
 		"@vscode/test-electron": "^2.1.5",
+		"@vscode/vsce": "^3.6.1",
 		"esbuild": "^0.15.7",
 		"eslint": "^8.23.1",
 		"glob": "^8.0.3",
